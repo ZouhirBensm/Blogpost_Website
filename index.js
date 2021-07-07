@@ -74,7 +74,7 @@ app.post('/users/login', redirectIfAuthenticatedMiddleware ,loginUserController)
 app.get('/auth/logout', logoutController)
 app.use((req,res)=>res.render('notfound'));
 
-/*
+
 
 const validateMiddleWare = (req,res,next)=>{    
     if(req.files == null || req.body.title == null || req.body.title == null){        
@@ -109,4 +109,4 @@ app.get('/',async (req,res)=>{
         blogposts
     });
 })
-*/
+
